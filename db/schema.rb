@@ -12,4 +12,11 @@
 
 ActiveRecord::Schema.define(version: 1) do
 
+  create_table "students", force: :cascade do |t|
+    t.string "name"
+    t.boolean "graduated?"
+    t.integer "age"
+    t.datetime "graduation_year"
+  end
+
 end
